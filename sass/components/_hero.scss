@@ -1,0 +1,68 @@
+.hero {
+  display: block;
+  text-align: center;
+  padding-top: 118px;
+  padding-bottom: 118px;
+  padding-left: 0;
+  padding-right: 0;
+  height: 400px;
+  max-width: 480px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+  url(/images/Header-photo-tel.jpg);
+  @media screen and (min-width: 768px) {
+   padding-top: 118px;
+   padding-bottom: 118px;
+   height: 400px; 
+   max-width: 768px;
+   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+   url(/images/header-photo-tab.jpg);
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    height: 600px;
+    max-width: 1600px;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(/images/header-photo.jpg);
+  }
+  
+  }
+
+.back-photo {
+  margin-left: auto;
+  margin-right: auto;
+  }
+
+.hero__title {
+  color: var(--title-text-color);
+  margin-bottom: 30px;
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.62;
+
+  @media screen and (min-width: 1200px) {
+   font-size: 44px;
+   line-height: 1.36; 
+  }
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.button-main {
+  display: inline-block;
+  color: var(--title-text-color);
+  background-color: var(--accent-text-color);
+  cursor: pointer;
+  width: 200px;
+  height: 50px;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  text-align: center;
+  letter-spacing: 0.06em;
+  border-radius: 4px;
+}

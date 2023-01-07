@@ -1,0 +1,21 @@
+/* Відступи центральних секцій */
+.section {
+  
+  margin-top: 0;
+  margin-bottom: 0;
+}
+/* Заголовок секції */
+.trans {
+  color: transparent;
+}
+.section-title {
+  columns: var(--primery-text-color);
+  // font-size: 36px;
+  // line-height: 1.17;
+  text-align: center;
+  // margin-bottom: 50px;
+}
+/* Маржін тайтл */
+.title {
+  margin-bottom: 10px;
+}

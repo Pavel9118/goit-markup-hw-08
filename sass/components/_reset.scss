@@ -1,0 +1,22 @@
+/* Скидання стилів заголовка */
+p,
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Стилі body */
+body {
+  position: relative;
+  font-family: Roboto, sans-serif;
+  color: var(--primery-text-color);
+  background: var(--title-text-color);
+  letter-spacing: 0.03em;
+}

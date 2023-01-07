@@ -1,0 +1,217 @@
+   /* Стилі backdrop */
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  transition: opacity 250ms linear, visibility 250ms linear;
+  }
+.backdrop.is-hidden .modal {
+  transform: translate(-50%, -50%) scaley(0);
+  }
+.modal {
+  position: absolute;
+  top: 94px;
+  @media screen and (min-width: 768px) {
+  top: 208px;
+  }
+  @media screen and (min-width: 1200px) {
+  top: 221px;
+  width: 528px;
+  min-height: 581px;
+  }
+  left: 50%;
+  padding-top: 40px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 0;
+  transform: translateX(-50%) scale(1);
+  transition: transform 400ms linear;
+  width: 450px;
+  min-height: 609px;
+  background-color: var(--title-text-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  }
+.modal__close {
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  width: 30px;
+  height: 30px;
+  background: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.1); 
+  border-radius: 50%;
+  @extend %flex-setting;
+  }
+  .modal__close-icons {
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:focus {
+    fill: var(--accent-text-color); 
+    }
+    &:hover {
+    fill: var(--accent-text-color); 
+    }
+  }
+  
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  }
+ 
+.modal__headline {
+  margin-bottom: 12px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  }
+.modal-group {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 12px;
+  line-height: 1.2;
+  letter-spacing: 0.01em;
+  color: #757575;
+}
+.modal-group label {
+  display: block;
+  margin-bottom: 4px;
+}
+.modal-group>::placeholder {
+  padding: 12px 16px;
+  font-size: 12px;
+  line-height: 1.2;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+}
+
+ 
+.modal-group__input {
+  width: 100%;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  padding-left: 42px;
+  color: rgba(33, 33, 33, 1);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:focus {
+  border: 1px solid #2196F3;
+  outline: transparent;
+  }
+  &:hover {
+  border: 1px solid #2196F3;
+  outline: transparent;
+  }
+  &:focus + svg {
+  fill: var(--accent-text-color);
+  }
+  &:hover + svg {
+  fill: var(--accent-text-color);
+  }
+}
+  
+
+
+.modal-group__icon {
+  fill: var(--primery-text-color);
+  }
+.modal-group__wrapper {
+  position: relative;
+}
+.modal-group__icon {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+  fill: rgba(33, 33, 33, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+.modal-group__comment {
+  width: 100%;
+  height: 120px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  color: rgba(33, 33, 33, 1);
+  resize: none;
+  &:focus {
+  border-color: var(--accent-text-color);
+  outline: transparent;
+  }
+  &:hover {
+  border-color: var(--accent-text-color);
+  outline: transparent;
+  }
+} 
+
+
+/* Чекбокс */
+.modal-checkbox {
+font-size: 14px;
+line-height: 1.7;
+letter-spacing: 0.03em;
+color: #757575;
+}
+.modal-checkbox__label {
+  display: flex;
+  align-items: center;
+  &::before {
+  content: "";
+  width: 16px;
+  height: 16px;
+  margin-right: 9px;
+  border: 2px solid #212121;
+  border-radius: 2px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+}
+
+.modal-checkbox__input:checked + label::before {
+ background-color: var(--accent-text-color);
+ border: none;
+ background-image: url(../images/check.svg);
+ background-repeat: no-repeat;
+ background-position: center;
+ background-size: 11px;
+}
+.modal-checkbox__link {
+  margin-left: 4px;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  opacity: 0;
+}
+.modal-checkbox--color{
+  color: var(--accent-text-color);
+}
+.modal-button {
+  position: absolute;
+  left: 50%;
+  bottom: 40px;
+  transform: translateX(-50%);
+  background-color: var(--accent-text-color);
+  width: 200px;
+  height: 50px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.06em;
+  text-align: center;
+  color: var(--title-text-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: transparent;
+}

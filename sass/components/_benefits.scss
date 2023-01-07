@@ -1,0 +1,59 @@
+/* Іконки переваги */
+.benefits-section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @media screen and (min-width: 1200px) {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  }
+ }
+.benefits-paragraph {
+  display: flex;
+  margin-top: -30px;
+  margin-left: -30px;
+  flex-wrap: wrap;
+}
+.benefits-paragraph__item {
+  margin-left: 30px;
+  margin-top: 30px;
+
+  // @media screen and (min-width: 480px) {
+  // flex-basis: calc((100% - 30px) / 1);
+  // }
+  @media screen and (min-width: 768px) {
+  flex-basis: calc((100% - 60px) / 2);
+  }
+  @media screen and (min-width: 1200px) {
+  flex-basis: calc((100% - 120px) / 4);
+  }
+  
+}
+.benefits-paragraph__list {
+  color: var(--paragraph-text-color);
+  font-size: 14px;
+  line-height: 1.71;
+}
+.benefits-image {
+  margin-bottom: 30px;
+  @extend %flex-setting;
+  width: auto;
+  height: 120px;
+  background-color:rgba(245, 244, 250, 1);
+  border-radius: 4px;
+}
+.benefits-paragraph__title {
+  color: var(--primery-text-color);
+  text-align: center;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  @media screen and (min-width: 768px) {
+  text-align: left;
+  }
+  @media screen and (min-width: 1200px) {
+  text-align: left;
+  }
+}
+

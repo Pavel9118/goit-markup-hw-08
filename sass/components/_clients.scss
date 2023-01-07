@@ -23,21 +23,18 @@
 }
 .clients__list {
   display: flex;
-  margin-top: -30px;
-  margin-left: -30px;
   flex-wrap: wrap;
+  gap: 30px;
   padding-bottom: 94px;
   }
 
 .clients__item {
-  margin-top: 30px;
-  margin-left: 30px;
-  flex-basis: calc((100% - 60px) / 2);
+  flex-basis: calc((100% - 30px) / 2);
   @media screen and (min-width: 768px) {
-  flex-basis: calc((100% - 90px) / 3);
+  flex-basis: calc((100% - 60px) / 3);
   }
   @media screen and (min-width: 1200px) {
-  flex-basis: calc((100% - 180px) / 6);
+  flex-basis: calc((100% - 150px) / 6);
   }
   }
  

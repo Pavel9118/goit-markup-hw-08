@@ -621,7 +621,7 @@
 }
 
 .footer-mail-form__input {
-  width: 358px;
+  width: 100%;
   height: 50px;
   display: block;
   margin-left: auto;
@@ -631,8 +631,9 @@
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 480px) {
   .footer-mail-form__input {
+    width: 358px;
     padding-left: 16px;
     margin-right: 12px;
   }
@@ -722,8 +723,8 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(/images/Header-photo-tel.jpg);
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/Header-photo-tel.jpg);
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/Header-photo-tel.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Header-photo-tel.jpg);
 }
 @media screen and (min-width: 768px) {
   .hero {
@@ -731,8 +732,8 @@
     padding-bottom: 118px;
     height: 400px;
     max-width: 768px;
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(/images/header-photo-tab.jpg);
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/header-photo-tab.jpg);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/header-photo-tab.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/header-photo-tab.jpg);
   }
 }
 @media screen and (min-width: 1200px) {
@@ -741,8 +742,8 @@
     padding-bottom: 200px;
     height: 600px;
     max-width: 1600px;
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(/images/header-photo.jpg);
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/header-photo.jpg);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/header-photo.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/header-photo.jpg);
   }
 }
 
@@ -838,6 +839,7 @@
   background-color: rgba(0, 0, 0, 0.2);
   -webkit-transition: opacity 250ms linear, visibility 250ms linear;
   transition: opacity 250ms linear, visibility 250ms linear;
+  overflow-y: scroll;
 }
 
 .backdrop.is-hidden .modal {
@@ -865,6 +867,7 @@
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+  overflow-y: scroll;
 }
 @media screen and (min-width: 768px) {
   .modal {

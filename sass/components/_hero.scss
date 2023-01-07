@@ -11,14 +11,14 @@
   background-position: center;
   background-repeat: no-repeat;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-  url(/images/Header-photo-tel.jpg);
+  url(../images/Header-photo-tel.jpg);
   @media screen and (min-width: 768px) {
    padding-top: 118px;
    padding-bottom: 118px;
    height: 400px; 
    max-width: 768px;
    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-   url(/images/header-photo-tab.jpg);
+   url(../images/header-photo-tab.jpg);
   }
   @media screen and (min-width: 1200px) {
     padding-top: 200px;
@@ -26,7 +26,7 @@
     height: 600px;
     max-width: 1600px;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(/images/header-photo.jpg);
+    url(../images/header-photo.jpg);
   }
   
   }

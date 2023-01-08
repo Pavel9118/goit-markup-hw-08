@@ -1242,7 +1242,6 @@ body {
 }
 
 .team-section__title {
-  margin-bottom: 30px;
   font-weight: 700;
   font-size: 28px;
   line-height: 1.17;
@@ -1286,6 +1285,7 @@ body {
   .team-list__item {
     -ms-flex-preferred-size: calc((100% - 60px) / 2);
         flex-basis: calc((100% - 60px) / 2);
+    margin-top: 30px;
   }
 }
 @media screen and (min-width: 1200px) {

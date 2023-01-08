@@ -505,7 +505,7 @@
 @media screen and (min-width: 1200px) {
   .footer-contacts {
     margin-left: 0;
-    margin-right: 70px;
+    margin-right: 76px;
     text-align: left;
   }
 }
@@ -561,7 +561,7 @@
 @media screen and (min-width: 1200px) {
   .footer-soc-links {
     padding-top: 12px;
-    margin-right: 93px;
+    margin-right: 99px;
   }
 }
 
@@ -698,6 +698,8 @@
   .footer-mail-form__button {
     display: inline-block;
     margin-top: 0;
+    outline: transparent;
+    margin-left: auto;
   }
 }
 

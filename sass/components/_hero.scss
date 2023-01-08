@@ -12,6 +12,12 @@
   background-repeat: no-repeat;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
   url(../images/Header-photo-tel.jpg);
+  @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  background-image: url(../images/Header-photo-tel-2x.jpg);
+  }
+
   @media screen and (min-width: 768px) {
    padding-top: 118px;
    padding-bottom: 118px;
@@ -19,6 +25,11 @@
    max-width: 768px;
    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
    url(../images/header-photo-tab.jpg);
+   @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  background-image: url(../images/header-photo-tab-2x.jpg);
+  }
   }
   @media screen and (min-width: 1200px) {
     padding-top: 200px;
@@ -27,6 +38,11 @@
     max-width: 1600px;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url(../images/header-photo.jpg);
+     @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  background-image: url(../images/header-photo-2x.jpg);
+  }
   }
   
   }

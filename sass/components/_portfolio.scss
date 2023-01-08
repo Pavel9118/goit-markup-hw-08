@@ -6,12 +6,14 @@
 .section-portfolio__title {
   display: none;
 }
+
 .portfolio-card__title {
   color: var(--primery-text-color);
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
 }
+
 .portfolio-card__list {
   color: var(--paragraph-text-color);
   font-size: 16px;
@@ -19,6 +21,7 @@
 }
 /* Карточки Портфоліо */
 .portfolio {
+  list-style: none;
   display: flex;
   flex-wrap: wrap;
   margin-top: calc( -1 * var(--card-set-gap));
@@ -26,6 +29,7 @@
   background: var(--title-text-color);
 }
 .portfolio__item {
+
   margin-left: var(--card-set-gap);
   margin-top: var(--card-set-gap);
   flex-basis: calc(100% / 3 - var(--card-set-gap));

@@ -47,6 +47,8 @@ color: #212121;
  flex-wrap: wrap;
  gap: 30px;
  justify-content: center;
+ margin-bottom: 0;
+ margin-top: 0;
 }
 
 .team-list__item {
@@ -58,7 +60,7 @@ color: #212121;
   flex-basis: calc((100% - 60px) / 2);
   }
   @media screen and (min-width: 1200px) {
-  flex-basis: calc((100% - 120px) / 4);
+  flex-basis: calc((100% - 90px) / 4);
   margin-top: 50px;
   }
 }
